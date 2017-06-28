@@ -1,0 +1,43 @@
+<html>
+<head> 
+<style type="text/css">
+.y
+{
+background-color:yellow;
+}
+.letter
+{
+font-weight:bold;
+font-style:oblique;
+}
+.red
+{
+color:red;
+}
+.o
+{
+ font-family:serif ;
+ width:700px;
+  height:120px;
+ border: 1px solid black;
+ padding: 20px;
+
+.tr
+{
+text-decoration:line-through;
+}
+.under
+{
+text-decoration:underline;
+}
+</style>
+</head>
+<body
+<div class="o">
+<span class="letter"> <span class="y">Владения Мальтийского ордена</span></span><span class="letter"> (Ордена ГОСПИТАЛЬЕРОВ)</span> — совокупность территорий мира, принадлежавших этому рыцарскому религиозному ордену <span class="letter">РИМСКО-КАТОЛИЧЕСКОЙ ЦЕРКВИ</span> в <span class="letter">XII—XVIII </span> веках. В разное время они включали ряд островов и прибрежных земель <span class="red">Средиземноморья</span>, а также (в середине XVII века) островные колонии в <span class="under">Вест-Индии</span><span class="tr"> (Карибском бассейне Америки)</span>. В настоящее время <span class="red">Орден</span> владеет (в режиме экстерриториальности) лишь комплексом особняков в итальянском <span class="letter">Риме</span>.
+</div>
+<div class="0">
+
+</div>
+</body>
+</html>

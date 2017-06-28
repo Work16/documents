@@ -1,0 +1,11 @@
+body{
+  background: blue;
+  color: white;
+}
+#a{
+hspace:50;
+wspace:55;
+}
+p{
+color:red;
+}

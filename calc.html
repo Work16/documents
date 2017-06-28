@@ -1,0 +1,46 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+function f()
+{
+var a= document.getElementById("para1").value;
+var b= document.getElementById("para2").value;
+var c= document.getElementById("para3").value;
+if(b=='+')
+document.getElementById("para4").value=a*1+c*1;
+if (b=='-')
+document.getElementById("para4").value=a*1-c*1;
+if(b=="*")
+document.getElementById("para4").value=a*c;
+if(b=="/")
+document.getElementById("para4").value=a/c;
+if(b=="%")
+document.getElementById("para4").value=a%c;
+if(b=="^")
+{
+document.getElementById("para4").value=a;
+for(var i=1;i<c;i++)
+{document.getElementById("para4").value*=a;}}
+}
+
+
+</script>
+</head>
+<body>
+
+<form name="clc">
+<input type="text" name="text1" size="10" maxlength="10" value="Number" id="para1">
+
+<input type="text" name="text1" size="10"
+            maxlength="1" value="Operation" id="para2" >
+<input type="text" name="text1" size="10"
+            maxlength="10" value="Number" id="para3">
+<input type="text" name="text1" size="10"
+            maxlength="10" value="Result" id="para4" >
+<input type="button" name="button" value="Count" onClick="f();">
+
+</form>
+</body>
+</html>

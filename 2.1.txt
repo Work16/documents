@@ -1,0 +1,5 @@
+body
+{
+vspace:20;
+hspace:20;
+}

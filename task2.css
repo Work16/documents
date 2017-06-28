@@ -1,0 +1,278 @@
+#menu
+{
+    height:35px;
+    width: 100%;
+    border:1.5px solid black;
+    position:fixed;
+top:95%;
+    left:0px;
+line-height: 40px;
+background:whitesmoke;
+}
+
+ .menu_parts
+ {
+     padding:2px;
+     color:blue;
+     text-decoration: underline;
+     margin:10px;
+   display:inline;
+   border-right: 0.9px solid black;
+ }
+
+ #last_menu_part
+ {
+     border-right:none ;
+ }
+
+ #additional_menu
+ {
+     
+     width: 300px;
+     height:95%;
+     border:1px solid black;
+      word-wrap:break-word;
+      overflow:auto;
+      position:fixed;
+      float:left; 
+ top:0px;
+ right:0px;
+ text-transform: uppercase;
+ background:silver;
+ }
+
+
+.first_line
+{
+    margin-left:2px;
+    color:purple;
+    margin-top:25px;
+}
+
+.second_line
+{
+    margin-left:0px;
+    color:palevioletred;
+    list-style: none;
+    margin-top:20px;
+}
+
+.third_line
+{
+    margin-left:22px;
+    color:blue;
+}
+
+.apple:before
+{
+    content:url('apples.jpg');
+    margin:12px;
+}
+
+.lenovo:before
+{
+    content:url('lenovo_newlogo.jpg');
+    margin:12px;
+}
+
+.htc:before
+{
+    content:url('htc.png');
+    margin:12px;
+}
+.huawei:before
+{
+    content:url('huawei.jpg');
+    margin:12px;
+}
+
+.lg:before
+{
+    content: url('lg.png');
+    margin:12px;
+}
+
+.accer:before
+{
+    content:url('acer-logo.jpg');
+    margin:12px;
+}
+
+.samsung:before
+{
+content: url('samsung.png');
+margin:12px;
+}
+
+.microsoft:before
+{
+    content: url('microsoft.jpg');
+    margin:12px;
+}
+
+#breadcrumbs
+{
+    width: 80%;
+    height: 35px;
+    border:1px solid black;
+    word-wrap: break-word;
+    position:fixed;
+    top:0px;
+    left:0px;
+}
+.breadcrumb 
+{
+    text-transform: capitalize;
+}
+a{
+    color:violet;
+}
+a:hover
+{
+    color:red;
+}
+.active
+{
+    color:grey;
+}
+.breadcrumb li { display: inline; list-style: none; }
+.breadcrumb li:before { content: url('arrow.jpg'); }
+.breadcrumb li:first-child:before { content: ''; }
+
+img{
+    display:inline-block;
+    width: 250px;
+    height: 250px;
+    margin:15px;
+}
+
+#content
+{
+     border:1px solid black;
+     overflow:scroll;
+     background-color: honeydew;
+     width:80%;
+     height: 90.5%;
+     position:fixed;
+     left:2px;
+     top:36px;
+}
+
+
+.image
+{
+    display:inline-block;
+}
+
+
+@media content and (max-width:1000px)
+{
+    .content
+    {
+        width:60%;
+        height: auto;
+    }
+    figcaption
+    {
+        color:red;
+size:2px;
+    }
+    img{
+    width: 50%;
+    height: 50%;
+    margin:30%;
+    }
+}
+
+@media content and (max-width:80px)
+{
+    .content
+    {
+        width:60%;
+        height: auto;
+    }
+    figcaption
+    {
+        color:yellow;
+size:2px;
+    }
+    img{
+    width: 20%;
+    height: 20%;
+    margin:30%;
+    }
+}
+@media content and (max-width:700px)
+{
+    .content
+    {
+        width:60%;
+        height: auto;
+    }
+    figcaption
+    {
+        color:peru;
+size:2px;
+    }
+    img{
+    width: 36%;
+    height: 36%;
+    margin:30%;
+    }
+}
+
+@media content and (max-width:1000px)
+{
+    .content
+    {
+        width:60%;
+        height: auto;
+    }
+    figcaption
+    {
+        color:red;
+size:2px;
+    }
+    img{
+    width: 50%;
+    height: 50%;
+    margin:30%;
+    }
+}
+
+@media content and (max-height:80px)
+{
+    .content
+    {
+        width:60%;
+        height: auto;
+    }
+    figcaption
+    {
+        color:yellow;
+size:2px;
+    }
+    img{
+    width: 20%;
+    height: 20%;
+    margin:30%;
+    }
+}
+@media content and (max-height:700px)
+{
+    .content
+    {
+        width:60%;
+        height: auto;
+    }
+    figcaption
+    {
+        color:peru;
+size:2px;
+    }
+    img{
+    width: 36%;
+    height: 36%;
+    margin:30%;
+    }
+}

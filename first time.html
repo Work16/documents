@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Click and Doubleclick</title>
+<style>
+    .red {
+      background-color: red;
+    }
+    .green {
+      background-color: green;
+    }
+</style>
+<script>
+var c=0;
+function f()
+{
+c++;
+var a=document.getElementById("1");
+//a.style.backgroundColor="red";
+//setTimeout(function(){ var a=document.getElementById("1");a.style.backgroundColor="green";},2000);
+setTimeout(f,4000);
+if(c==1)
+a.style.backgroundColor="red";
+else
+a.style.background="green";
+c=0;
+}
+</script>
+ </head>
+ <body>
+  <table border="1">
+   <tr>
+    <td id="1" onclick="f();">ίχεικΰ 1</td>
+    <td>ίχεικΰ 2</td>
+</tr>
+   <tr>
+ <td>ίχεικΰ 3</td>
+    <td>ίχεικΰ 4</td>
+</tr>
+ </table>
+ </body>
+</html>

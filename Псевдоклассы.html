@@ -1,0 +1,49 @@
+<html>
+<head>
+<style>
+
+
+a:link { 
+    text-decoration: none;
+color:grey;
+   } 
+   a:visited { text-decoration: none; } 
+   a:active { text-decoration: none; color:blue; }
+   a:hover {
+    text-decoration: underline; 
+    color: red;
+   }
+p:lang(en) {color:yellow;size:40px;} 
+div {
+margin: 20px;
+padding: 30px;
+background-color: #c0e4ff;
+border: 2px solid #008000
+}
+p:first-child {
+background-color: #c5ffa0;
+border: 2px solid #008000
+}
+p:first-line{color:purple;}
+p:first-letter{color:red;}
+div:empty{border:dotted;}
+input:enabled { color:blue; }
+input:disabled{bacground:red;}
+</style>
+</head>
+<body>
+<a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0">Пример ссылки</a>
+<div>
+<p>первый дочерний параграф - он выделен псевдоклассом first-child</p> 
+<p>второй дочерний параграф</p>
+<p>третий дочерний параграф</p>
+</div> 
+<p lang="en">cat></p>
+ <form>
+   <p>Порода</p>
+   <p><input type="checkbox" name="agree" enabled> 
+   веслоухие </p>
+   <p><input type="submit" name="submit" disabled></p>
+  </form>
+</body>
+</html>

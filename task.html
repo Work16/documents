@@ -1,70 +1,60 @@
-<!DOCTYPE html>
+<html>
 <head>
-      <link rel="stylesheet" href="task.css">
+<style>
+
+img
+{
+height:30px;
+width:30px;
+position:fixed;
+z-index:100;
+}
+</style>
+<script>
+function f()
+{
+var b=document.p.o.value;
+var a=document.getElementsByTagName('img');
+for(var i=0;i<a.length;i++)
+a[i].style.height=String(b)+"px";
+}
+
+function g()
+{
+var b=document.p.i.value;
+var a=document.getElementsByTagName('img');
+for(var i=0;i<a.length;i++)
+a[i].style.width=String(b)+"px";
+}
+function d()
+{
+var a=document.getElementsByTagName('img');
+var b=document.p.v.value;
+for(var i=0;;i++)
+{
+if(i==a.length)
+i=0;
+a[i].style.zIndex=String(0);
+a[i].setTime(b);
+a[i].style.zIndex=String(100);
+}
+}
+</script>
 </head>
-<body>
-
-<div id="main">
-<span class="italic">Established Nottingem 2003</span> <br>
-<span class="weight">The celebrated new Miscellany of</span>
-<h1>MR. SIMON COLLISON</h1>
-<div class="left">
-    <span class="italic">Bottled for pleusure</span><br>
-    <span class="weight"> Autobiography</span><bR>
-    <img src="cat.jpg"></img><br>
-    <span class="red"><h2>H</h2>ello.</span>I am a designer.I also do plentyof writing,speaking and sleeping.I am based in Notingem.
-        But my work means I am often found in all sorts of other fine places </span>
-    </div>
-
-
-    <div class="right">
-    <span class="italic">Dropping since as it is hot</span><br>
-    <span class="weight">The splendid journal</span><bR>
-    <img src="cat.jpg"></img><br>
-    <span class="red"><span id="par"></span>2014 music roundup</span><br>It was yet another cracking year for new music, and I consumed as much as possible, making my annual roundup as difficult as ever.</span>
-    </div>
-
-
-      <div class="left">
-    <span class="italic">Catologue natural method</span><br>
-    <span class="weight">Exhaustive Archives</span><bR>
-    <img src="cat.jpg"></img><br>
-    <span class="red">866вЂ”2013: a year in review<br>
-865вЂ”2013 in music<br>
-863вЂ”Yet another year in review<br>
-862вЂ”Yet another year in music<br>
-864вЂ”iPhone video experiment</span>
-    </div>
-
-
-      <div class="right">
-    <span class="italic">MR. Collison</span><br>
-    <span class="weight">Receiving  Emails</span><bR>
-    <img src="cat.jpg"></img><br>
-    <span class="red"><h2>O</h2>pinions and queries this way</span><br>Drop me a line if you wish. I'm always interested in new projects and opportunities and will of course do my best to reply to your emails swiftly and efficiently</span>
-    </div>
-    
-    <div class="left one">
-        <span class="italic">A very proud of those</span><br>
-    <span class="weight">Fictive Kin</span><br>
-    <img src="cat.jpg"></img><br></div>
-
-     <div class="right one">
-        <span class="italic">Traveling </span><br>
-    <span class="weight">Hi moments</span><br>
-    <img src="cat.jpg"></img><br></div>
-
-
-     <div class="left one">
-        <span class="italic">Running and cycling</span><br>
-    <span class="weight">Strava Statistics</span><br>
-    <img src="cat.jpg"></img><br></div>
-
-
-     <div class="right one">
-        <span class="italic">The tweets of @colly</span><br>
-    <span class="weight">Tweet me</span><br>
-    <img src="cat.jpg"></img><br></div>
+<body> 
+<div name="p">
+<label>Ширина<input type="text" name="o" size="10" id="w"></label>
+<button  value="change" onClick="g();">Изменить</button><br>
+<label>Высота<input type="text" name="i" size="10" id="h" ></label>
+<button  value="Change" onClick="f();">Изменить</button><br>
+<label>Время показа<input type="text" name="v" size="10" id="t"> </label>
+<button  value="l"onClick="d();">Изменить</button>
+<br>
 </div>
+<img  src="1327.jpg" align="left"></img>
+<br>
+<img  src="084.jpg" align="left"></img>
+<img  src="images.jpg" align="left"></img>
+<img  src="Kosh_cv_8.jpg" align="left"></img>
 </body>
 </html>
