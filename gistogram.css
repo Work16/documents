@@ -1,0 +1,11 @@
+#scene
+{
+    height: 500px;
+    width:90%;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div{
+    display:inline-block;
+}

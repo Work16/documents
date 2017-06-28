@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        .button
+        {
+            width: 100px;
+            height: 40px;
+        }
+        img 
+        {
+            position:fixed;
+            top:50px;
+            left:0px;
+            display:none;
+        }
+        </style>
+    <script>
+        var t=2000;
+function f()
+{
+     var a=document.getElementsByClassName("slyde");
+    for(var i=0;i<a.length;i++)
+   { a[i].width=150;
+   a[i].height=150;
+   a[i].style.zIndex=0;
+   }
+}
+function wm()
+{
+    var a=document.getElementsByClassName("slyde");
+    for(var i=0;i<a.length;i++)
+    a[i].width=a[i].width/2;
+}
+
+function wp()
+{
+    var a=document.getElementsByClassName("slyde");
+    for(var i=0;i<a.length;i++)
+    a[i].width=a[i].width*2;
+}
+function hp()
+{
+    var a=document.getElementsByClassName("slyde");
+    for(var i=0;i<a.length;i++)
+    a[i].height=a[i].height*2;
+}
+
+function hm()
+{
+    var a=document.getElementsByClassName("slyde");
+    for(var i=0;i<a.length;i++)
+    a[i].height=a[i].height/2;
+}
+function tm()
+{
+     t=t/2;
+     //alert(t);
+}
+function tp()
+{
+t=t*2;
+//alert(t);
+}
+var my_index=0;
+function show()
+
+{
+ var a=document.getElementsByClassName("slyde");
+    for(var i=0;i<a.length;i++)
+    {
+       /* if(i==0)
+        for(var j=0;j<a.length;j++)
+        a[j].style.zIndex=0;*/
+      /*  a[i].style.zIndex=i;
+        setTimeout(function(){},t);
+        a[i].style.zIndex=0;
+        //if(i+1==a.length)i=0;*/
+        a[i].style.display="none";
+    }
+     my_index++;
+    if (my_index > a.length) {my_index = 1}    
+    a[my_index-1].style.display = "block";  
+    setTimeout(show, t); 
+}
+        </script>
+</head>
+<body onload="f(); show();">
+    <button value="w-" onclick="wm();">w-</button>
+    <button onclick="wp();" > w+</button>
+    <button onclick="hm();">h-</button>
+    <button onclick="hp();"> h+</button>
+    <button onclick="tm();">t-</button>
+    <button onclick="tp();">t+</button>
+    <img src="084.jpg" class="slyde"></img>
+    <img src="1327.jpg" class="slyde"></img>
+    <img sr="images.jpg" class="slyde"  alt="Sorry!!!It could not be shown now"></img>
+    <img src="Kosh_cv_8.jpg" class="slyde"></img>
+    </body>
+    </html>

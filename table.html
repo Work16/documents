@@ -1,0 +1,62 @@
+<html>
+<head>
+<title> Interactive table </title>
+<script>
+
+function f ()
+{
+var g=document.getElementsByClassName("a");
+for(var i=0;i<g.length;i++)
+g[i].removeEventListener("click",f);
+var a=document.getElementById("t").getElementsByTagName('td').length;
+var b=document.getElementById("t").getElementsByTagName('tr').length;
+var c=a/b;
+var row= document.getElementById("t").insertRow(-1);
+for (var i=0;i<c;i++)
+{
+ var newCell = row.insertCell(-1);
+    newCell.width="100";
+    newCell.innerHTML="newCell";
+newCell.class="a";
+newCell.addEventListener("click",f);
+}
+}
+function d ()
+{
+var g=document.getElementsByClassName("a");
+for(var i=0;i<g.length;i++)
+g[i].removeEventListener("click",d);
+        var tdArray = document.getElementById("t").getElementsByTagName('tr');
+        for (var i = 0, dlina = tdArray.length; i < dlina; i++)
+           {
+// tdArray[i].insertCell(-1);
+    var newCell = tdArray[i].insertCell(-1);
+    newCell.width="100";
+newCell.class="a";
+    newCell.innerHTML="newCell";
+   newCell.addEventListener("click",d);
+}
+}
+function h()
+{
+var newCell=document.getElementsByClassName("a");
+for(var i=0;i<newCell.length;i++){
+newCell[i].addEventListener("click",d);
+newCell[i].addEventListener("click",f);
+}
+}
+</script>
+</head>
+<body onload="h();">
+  <table border="1" id="t">
+   <tr>
+    <td class="a">ίχεικΰ 1</td>
+    <td class="a">ίχεικΰ 2</td>
+   </tr>
+   <tr>
+<td class="a">ίχεικΰ 3</td>
+    <td class="a">ίχεικΰ 4</td>
+</tr>
+ </table>
+</body>
+</html>
